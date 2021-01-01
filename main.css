@@ -44,14 +44,14 @@
 width: 25px;
 height: 3px;
 background-color: #fff;
-margin: 5px;
+margin: 4px;
 transition: all 0.5s ease;
 }
 .showcase{
     background: url("images/bgunsplash.jpg") center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 92vh;
+    height: 100vh;
     top: 8vh;
     display: flex;
     align-items: center;
@@ -63,7 +63,7 @@ transition: all 0.5s ease;
     top: 0;
     left: 0;
     width:100%;
-    height: 100%;
+    height: 100vh;
     z-index: 1;
     background: rgba(0,0,0,0.6);
     box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
@@ -180,15 +180,79 @@ transition: all 0.5s ease;
     margin: 1px auto 2px;
     justify-content: center;
 }
-.accordion_wrap ul li{
+.accordion_wrap li{
+    list-style: none;
+}
+.accordion_wrap ul li .accordion_item{
     width: 200px;
     height: 225px;
-    background: #1ebba3;
-    border-right: 1px solid turquoise;
-    list-style: none;
-    
-} 
+    background: #2cd4bb;
+    border-right: 2px solid #fff;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease-in;
+    } 
 
+.accordion_wrap ul li .accordion_item:hover,
+.accordion_wrap ul li.active .accordion_item{
+    background: #199b87;
+    border-right: 2px solid #fff;
+}
+.accordion_wrap ul li:first-child .accordion_item:hover{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.accordion_wrap ul li:last-child .accordion_item:hover{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.accordion_wrap ul li .icons{
+    text-align: center;
+    padding-top: 105px;
+    font-size: 2rem;
+    color: rgb(39, 9, 9);
+    font-family: 'Noto Serif JP', serif;
+    letter-spacing: 2px;
+    
+}
+.accordion_wrap ul li:hover .icons,
+.accordion_wrap ul li.active .icons{
+    color: #fff;
+}
+
+.accordion_wrap ul li{
+    display: flex;
+}
+.accordion_menu{
+    width: 0px;
+    height: 225px;
+    background: #9df7e9;
+    overflow: hidden;
+    transition: width .2s ease;
+}
+.accordion_wrap ul li.active .accordion_menu{
+    width: 300px;
+}
+.accordion_menu .inner_am{
+    padding: 15px;
+}
+.accordion_menu .title{
+    font-weight: 600;
+}
+.accordion_menu .content{
+    font-size: 19px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.accordion_menu ul{
+    display: flex;
+    flex-direction: column;
+}
+.accordion_menu ul li{
+    list-style: disc outside none;
+display: list-item;
+margin-left: 1em;
+}
 
 
 
@@ -202,11 +266,14 @@ transition: all 0.5s ease;
     body{
         overflow-x: hidden;
     }
+    .nav{
+        height: 11vh;
+    }
     
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 100vh;
         top: 8vh;
         background-color:rgba(0,0,0,0.9);
         display: flex;
@@ -228,25 +295,99 @@ transition: all 0.5s ease;
         right: 0px;
         cursor: pointer;
     }
+    .showcase::after{
+        height: 100vh;
+    }
     .showcase-content h1{
-        font-size: 5.4rem;
+        font-size: 4.4rem;
     }
     .showcase-content h3{
-        font-size: 3.8rem;
+        font-size: 3.2rem;
     }
     .showcase-content p{
-        font-size: 2.4rem;
+        font-size: 2.1rem;
     }
     .showcase a{
         font-size: 2rem;
     }
-    /* .accordion_wrap ul{
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-    } */
-    
+   
+.accordion_wrap ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.accordion_wrap ul li .accordion_item{
+    width: 260px;
+    height: 80px;
+    border-bottom: 1px solid rgb(63, 26, 26);
+    margin-bottom: 0.4rem;
+    margin-left: 2rem;
+    } 
+
+.accordion_wrap ul li .accordion_item:hover,
+.accordion_wrap ul li.active .accordion_item{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+.accordion_wrap ul li.active .accordion_item{
+    margin-top: 3rem;
+}
+
+.accordion_wrap ul li .icons{
+    padding-top: 25px;  
+}
+
+.accordion_wrap ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion_menu{
+    width: 300px;
+    height: 0px;
+    background: #9df7e9;
+    overflow: hidden;
+    transition: height .2s ease;
+}
+.accordion_wrap ul li.active .accordion_menu{
+    height: 205px;
+    margin-bottom:30px ;
+    padding-top: 0px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.accordion_menu .inner_am{
+    padding: 15px;
+}
+.accordion_menu .title{
+    font-weight: 600;
+}
+.accordion_menu .content{
+    font-size: 15px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.accordion_menu ul{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.accordion_menu ul li{
+    list-style: disc outside none;
+    display: list-item;
+   margin-left: 1em;
+}
 }
 
 .nav-active{

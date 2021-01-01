@@ -22,6 +22,32 @@ const navSlide = () => {
 }
 navSlide();
 
+var liItems = document.querySelectorAll(".accordion_wrap ul li");
+var ulItems = document.querySelector('.accordion_wrap ul');
+
+liItems.forEach(function(item){
+    item.addEventListener("click", function(){
+        console.log("HEY")
+        const wetherActive = item.classList.contains('active')
+        liItems.forEach(function(item){
+            item.classList.remove('active');
+        })
+        if(wetherActive){
+            item.classList.remove('active');
+        }
+        else{item.classList.add('active');}
+        
+    })
+})
+ulItems.addEventListener('mouseleave', function(){
+    liItems.forEach(function(item){
+        item.classList.remove('active');
+    })
+})
+
+
+
+
 const myFunction = (e) => {
     console.log(window.scrollY);
     const yoffset = window.scrollY;
