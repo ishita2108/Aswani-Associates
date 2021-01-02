@@ -1,9 +1,11 @@
 
-*{
+html, body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow-x:hidden;
 }
+
 .nav{
     display: flex;
     justify-content: space-around;
@@ -133,9 +135,9 @@ transition: all 0.5s ease;
     color: #1ebba3;
 }
 .jumbotron{
-    margin-bottom: 0;
     padding: 2rem 0 3.5rem;
     border-radius: 0;
+    margin-bottom: -5px;
 }
 .jumbotron h3{
     font-size: 3rem;
@@ -153,7 +155,6 @@ transition: all 0.5s ease;
 .feature h3{
     font-size: 1.8rem;
     text-transform: uppercase;
-    padding-bottom: 0.rem;
     }
 .feature p{
     font-size: 1rem;
@@ -208,7 +209,7 @@ transition: all 0.5s ease;
 }
 .accordion_wrap ul li .icons{
     text-align: center;
-    padding-top: 105px;
+    padding-top: 90px;
     font-size: 2rem;
     color: rgb(39, 9, 9);
     font-family: 'Noto Serif JP', serif;
@@ -240,7 +241,7 @@ transition: all 0.5s ease;
     font-weight: 600;
 }
 .accordion_menu .content{
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 300;
     margin: 10px 0;
 }
@@ -254,8 +255,85 @@ display: list-item;
 margin-left: 1em;
 }
 
+/* contact */
+.bg{
+    margin-top: -30px;
+}
+.bg h3{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+    letter-spacing: 3px;
+    color: #fff;
+}
 
-
+.contact h3{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    }
+.contact h2{
+    font-size: 2rem;
+    color: #fff;
+}
+.contact p{
+    font-size: 1.5rem;
+    margin: 2px;
+    color: #fff;
+}
+.contact .heading-underline{
+    background-color: #fff;
+}
+.contact a p{
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+}
+.contact a{
+    margin: 10px;
+    color: #1ebba3;
+}
+.contact .social i{
+    margin: 4px;
+}
+.insta{
+    color:#cd486b;
+}
+.fb{
+    color: #4267B2;
+}
+.link{
+    color: #0E76a8;
+}
+.twitter{
+    color: #1DA1F2;
+}
+.wa{
+    color: #25D366;
+}
+.mail{
+    color: #fbbc05;
+}
+.bg{
+     background-color: #222020!important;
+}
+#main-footer{
+    background-color: rgb(82, 75, 75);
+    text-align: center;
+    margin-top: -30px;
+    color:#fff;
+    height: 90px;
+}
+#main-footer a{
+    color: #fff;
+}
+#main-footer p{
+  padding-top: 30px;
+  font-size: 1.6rem;
+}
+.none{
+    display:none;
+}
 @media  screen and (max-width:1028px){
     .nav-links{
         width: 70%;
@@ -322,7 +400,7 @@ margin-left: 1em;
 
 .accordion_wrap ul li .accordion_item{
     width: 260px;
-    height: 80px;
+    height: 100px;
     border-bottom: 1px solid rgb(63, 26, 26);
     margin-bottom: 0.4rem;
     margin-left: 2rem;
@@ -389,7 +467,7 @@ margin-left: 1em;
    margin-left: 1em;
 }
 }
-
+/* Contact */
 .nav-active{
     transform: translateX(0);
 }
