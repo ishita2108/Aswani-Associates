@@ -200,12 +200,12 @@ transition: all 0.5s ease;
     border-right: 2px solid #fff;
 }
 .accordion_wrap ul li:first-child .accordion_item:hover{
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .accordion_wrap ul li:last-child .accordion_item:hover{
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .accordion_wrap ul li .icons{
     text-align: center;
@@ -251,8 +251,7 @@ transition: all 0.5s ease;
 }
 .accordion_menu ul li{
     list-style: disc outside none;
-display: list-item;
-margin-left: 1em;
+    display: list-item;
 }
 
 /* contact */
@@ -388,16 +387,13 @@ margin-left: 1em;
     .showcase a{
         font-size: 2rem;
     }
-   
 .accordion_wrap ul{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;  
 }
 
 .accordion_wrap ul li .accordion_item{
-    width: 260px;
+    width: 280px;
     height: 100px;
     border-bottom: 1px solid rgb(63, 26, 26);
     margin-bottom: 0.4rem;
@@ -405,11 +401,10 @@ margin-left: 1em;
 
 .accordion_wrap ul li .accordion_item:hover,
 .accordion_wrap ul li.active .accordion_item{
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .accordion_wrap ul li.active .accordion_item{
     margin-top: 3rem;
@@ -425,20 +420,22 @@ margin-left: 1em;
 }
 
 .accordion_menu{
-    width: 300px;
+    display: flex;
+    width: 280px;
     height: 0px;
     background: #9df7e9;
     overflow: hidden;
     transition: height .2s ease;
 }
 .accordion_wrap ul li.active .accordion_menu{
-    height: 205px;
+    width: 280px;
+    height: 200px;
     margin-bottom:30px ;
     padding-top: 0px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .accordion_menu .inner_am{
     padding: 15px;
@@ -461,7 +458,6 @@ margin-left: 1em;
 .accordion_menu ul li{
     list-style: disc outside none;
     display: list-item;
-   margin-left: 1em;
 }
 }
 /* Contact */
