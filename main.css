@@ -397,6 +397,8 @@ transition: all 0.5s ease;
     height: 100px;
     border-bottom: 1px solid rgb(63, 26, 26);
     margin-bottom: 0.4rem;
+    margin-left:25px ;
+    margin-right: auto;
     } 
 
 .accordion_wrap ul li .accordion_item:hover,
@@ -426,6 +428,7 @@ transition: all 0.5s ease;
     background: #9df7e9;
     overflow: hidden;
     transition: height .2s ease;
+    margin-left: 25px;
 }
 .accordion_wrap ul li.active .accordion_menu{
     width: 280px;
@@ -436,6 +439,8 @@ transition: all 0.5s ease;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    margin-left: 25px;
+    margin-right: auto;
 }
 .accordion_menu .inner_am{
     padding: 15px;
@@ -451,9 +456,10 @@ transition: all 0.5s ease;
 
 .accordion_menu ul{
     display: flex;
-    justify-content:flex-start;
     align-items: flex-start;
     flex-direction: column;
+    justify-content:flex-start;
+    text-align:start;
 }
 .accordion_menu ul li{
     list-style: disc outside none;
