@@ -178,7 +178,7 @@ transition: all 0.5s ease;
 
 .accordion_wrap ul{
     display: flex;
-    margin: 1px auto 2px;
+    /* margin: 1px auto 2px; */
     justify-content: center;
 }
 .accordion_wrap li{
@@ -387,18 +387,22 @@ transition: all 0.5s ease;
     .showcase a{
         font-size: 2rem;
     }
+
 .accordion_wrap ul{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.accordion_wrap #ul{
+    margin: 0;
+    padding: 0;
 }
 
 .accordion_wrap ul li .accordion_item{
-    width: 280px;
-    height: 100px;
+    width: 260px;
+    height: 80px;
     border-bottom: 1px solid rgb(63, 26, 26);
     margin-bottom: 0.4rem;
-    margin-left:25px ;
-    margin-right: auto;
     } 
 
 .accordion_wrap ul li .accordion_item:hover,
@@ -413,7 +417,7 @@ transition: all 0.5s ease;
 }
 
 .accordion_wrap ul li .icons{
-    padding-top: 25px;  
+    padding-top: 15px;  
 }
 
 .accordion_wrap ul li{
@@ -422,16 +426,13 @@ transition: all 0.5s ease;
 }
 
 .accordion_menu{
-    display: flex;
-    width: 280px;
     height: 0px;
     background: #9df7e9;
-    overflow: hidden;
     transition: height .2s ease;
-    margin-left: 25px;
 }
+
 .accordion_wrap ul li.active .accordion_menu{
-    width: 280px;
+    width: 260px;
     height: 200px;
     margin-bottom:30px ;
     padding-top: 0px;
@@ -439,12 +440,8 @@ transition: all 0.5s ease;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin-left: 25px;
-    margin-right: auto;
 }
-.accordion_menu .inner_am{
-    padding: 15px;
-}
+
 .accordion_menu .title{
     font-weight: 600;
 }
@@ -457,9 +454,6 @@ transition: all 0.5s ease;
 .accordion_menu ul{
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
-    justify-content:flex-start;
-    text-align:start;
 }
 .accordion_menu ul li{
     list-style: disc outside none;
