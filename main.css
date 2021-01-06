@@ -32,7 +32,7 @@ html, body{
     color: #fff;
     text-decoration: none;
     letter-spacing: 3px;
-    font-weight: bold;
+    font-weight:700;
 }
 .nav-links a:hover,
 .nav-links a.active{
@@ -186,7 +186,7 @@ transition: all 0.5s ease;
 }
 .accordion_wrap ul li .accordion_item{
     width: 200px;
-    height: 225px;
+    height: 230px;
     background: #2cd4bb;
     border-right: 2px solid #fff;
     cursor: pointer;
@@ -226,7 +226,7 @@ transition: all 0.5s ease;
 }
 .accordion_menu{
     width: 0px;
-    height: 225px;
+    height: 230px;
     background: #9df7e9;
     overflow: hidden;
     transition: width .2s ease;
@@ -253,7 +253,40 @@ transition: all 0.5s ease;
     list-style: disc outside none;
     display: list-item;
 }
-
+.btn{
+    background-color:rgb(16, 56, 131);
+    color: #fff;
+    margin-top: 2px;
+}
+.btn:hover{
+    color: #fff!important;
+    padding:3px
+}
+.doc{
+    display: flex;
+    flex-direction: column;
+}
+.modal-header{
+    background-color: #2cceb6;
+}
+.modal-body ul li{
+    font-size: 1.5rem;
+}
+.modal-body ul li{
+    list-style: disc outside none;
+    display: list-item;
+    font-size: 1.9rem;
+}
+.modal-title{
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.modal-body h5{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 /* contact */
 .bg{
     margin-top: -30px;
@@ -324,7 +357,7 @@ transition: all 0.5s ease;
     height: 90px;
 }
 #main-footer a{
-    color: #fff;
+    color: #1ebba3;
 }
 #main-footer p{
   padding-top: 30px;
@@ -459,8 +492,13 @@ transition: all 0.5s ease;
     list-style: disc outside none;
     display: list-item;
 }
+.modal-body ul li{
+    list-style: disc outside none;
+    display: list-item;
+    font-size: 1.5rem;
 }
-/* Contact */
+
+
 .nav-active{
     transform: translateX(0);
 }

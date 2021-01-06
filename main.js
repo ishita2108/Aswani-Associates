@@ -42,7 +42,7 @@ var ulItems = document.querySelector('.accordion_wrap ul');
 
 liItems.forEach(function(item){
     item.addEventListener("click", function(){
-        console.log("HEY")
+    
         const wetherActive = item.classList.contains('active')
         liItems.forEach(function(item){
             item.classList.remove('active');
@@ -54,11 +54,7 @@ liItems.forEach(function(item){
         
     })
 })
-ulItems.addEventListener('mouseleave', function(){
-    liItems.forEach(function(item){
-        item.classList.remove('active');
-    })
-})
+
 
 
 
