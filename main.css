@@ -257,7 +257,7 @@ transition: all 0.5s ease;
 .btn{
     background-color:rgb(16, 56, 131);
     color: #fff;
-    margin-top: 2px;
+    margin-top: 8px;
 }
 .btn:hover{
     color: #fff!important;
@@ -465,7 +465,7 @@ transition: all 0.5s ease;
 
 .accordion_wrap ul li.active .accordion_menu{
     width: 260px;
-    height: 200px;
+    height: 230px;
     margin-bottom:30px ;
     padding-top: 0px;
     border-top-left-radius: 10px;
