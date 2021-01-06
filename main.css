@@ -33,6 +33,7 @@ html, body{
     text-decoration: none;
     letter-spacing: 3px;
     font-weight:700;
+    padding: 15px;
 }
 .nav-links a:hover,
 .nav-links a.active{
@@ -78,26 +79,26 @@ transition: all 0.5s ease;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 19rem;
+    margin-top: 15rem;
     z-index: 2;
     color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .showcase-content h1{
-    font-size: 8.4rem;
-}
-.showcase-content h3{
     font-size: 6.4rem;
 }
+.showcase-content h3{
+    font-size: 5.4rem;
+}
 .showcase-content p{
-    font-size: 3.4rem;
-    margin: 1.3rem;
+    font-size: 3rem;
+    margin: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 .showcase a{
     display: inline-block;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fff;
     background-color: #1ebba3;
     padding: 0.5rem 1.4rem;
@@ -158,7 +159,7 @@ transition: all 0.5s ease;
     }
 .feature p{
     font-size: 1rem;
-    margin: 2px;
+    margin: 2px;   
 }
 
 /* SERVICES */
@@ -185,7 +186,7 @@ transition: all 0.5s ease;
     list-style: none;
 }
 .accordion_wrap ul li .accordion_item{
-    width: 200px;
+    width: 170px;
     height: 230px;
     background: #2cd4bb;
     border-right: 2px solid #fff;
@@ -210,7 +211,7 @@ transition: all 0.5s ease;
 .accordion_wrap ul li .icons{
     text-align: center;
     padding-top: 90px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(39, 9, 9);
     font-family: 'Noto Serif JP', serif;
     letter-spacing: 2px;
@@ -232,7 +233,7 @@ transition: all 0.5s ease;
     transition: width .2s ease;
 }
 .accordion_wrap ul li.active .accordion_menu{
-    width: 300px;
+    width: 280px;
 }
 .accordion_menu .inner_am{
     padding: 15px;
@@ -241,7 +242,7 @@ transition: all 0.5s ease;
     font-weight: 600;
 }
 .accordion_menu .content{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     margin: 10px 0;
 }
@@ -306,7 +307,7 @@ transition: all 0.5s ease;
     color: #fff;
     }
 .contact h2{
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #fff;
 }
 .contact p{
@@ -317,13 +318,11 @@ transition: all 0.5s ease;
 .contact .heading-underline{
     background-color: #fff;
 }
-.contact a p{
-    font-size: 1rem;
+.contact a {
+    font-size: 1.4rem;
     letter-spacing: 1.2px;
-}
-.contact a{
-    margin: 10px;
     color: #1ebba3;
+    text-align: center;
 }
 .contact .social i{
     margin: 4px;
@@ -354,13 +353,13 @@ transition: all 0.5s ease;
     text-align: center;
     margin-top: -30px;
     color:#fff;
-    height: 90px;
+    height: 60px;
 }
 #main-footer a{
     color: #1ebba3;
 }
 #main-footer p{
-  padding-top: 30px;
+  padding-top: 20px;
   font-size: 1.6rem;
 }
 .none{
