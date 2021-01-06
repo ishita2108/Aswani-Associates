@@ -496,7 +496,9 @@ transition: all 0.5s ease;
     display: list-item;
     font-size: 1.5rem;
 }
-
+.contact a p{
+    font-size: 1rem;
+}
 
 .nav-active{
     transform: translateX(0);
