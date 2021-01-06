@@ -12,7 +12,7 @@ html, body{
     align-items: center;
     min-height: 8vh;
     background-color: rgba(0,0,0,0.6);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     z-index: 3;
     position: relative;
 }
