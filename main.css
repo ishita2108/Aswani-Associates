@@ -407,6 +407,9 @@ transition: all 0.5s ease;
     .showcase::after{
         height: 100vh;
     }
+    .showcase-content{
+        margin-top: 20vh;
+    }
     .showcase-content h1{
         font-size: 4.4rem;
     }
