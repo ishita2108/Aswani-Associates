@@ -79,7 +79,6 @@ transition: all 0.5s ease;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 20rem;
     z-index: 2;
     color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -406,9 +405,6 @@ transition: all 0.5s ease;
     }
     .showcase::after{
         height: 100vh;
-    }
-    .showcase-content{
-        margin-top: 20vh;
     }
     .showcase-content h1{
         font-size: 4.4rem;
