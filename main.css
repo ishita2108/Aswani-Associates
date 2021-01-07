@@ -79,7 +79,7 @@ transition: all 0.5s ease;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 15rem;
+    margin-top: 20rem;
     z-index: 2;
     color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -92,7 +92,7 @@ transition: all 0.5s ease;
 }
 .showcase-content p{
     font-size: 3rem;
-    margin: 1rem;
+    margin: 1.2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 2rem;
 }
